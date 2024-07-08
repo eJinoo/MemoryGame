@@ -1,0 +1,76 @@
+Title: Memory Game Split: Client-Server Implementation with Single-Threaded and Multi-Threaded Architecture
+
+Description:
+
+In this assignment, you will split the existing memory game application into separate client and server components and implement both single-threaded and multi-threaded server-client communication. The memory game, originally designed as a standalone application, will be transformed into a client-server model to facilitate multiplayer functionality.
+
+How to import the project into Eclipse:
+
+Extract the zip file: The recipient can then extract the contents of the zip file to any location on their computer.
+
+Open the project in Eclipse: Once the zip file is extracted, the recipient can open Eclipse and import the project into their workspace:
+
+In Eclipse, go to File > Import.
+Select General > Existing Projects into Workspace and click Next.
+Choose the root directory where the extracted project folder is located.
+Select the project from the list and click Finish.
+
+Review and build: The imported project should now be available in the recipient's Eclipse workspace. They can review the project structure, configurations, and code, and then build and run it as needed.
+
+
+Details:
+
+Client-Server Splitting:
+
+Divide the existing memory game application into two distinct components: client and server.
+The client component will be responsible for user interaction, rendering the game interface, and sending user actions (such as flipping cards) to the server.
+The server component will manage the game logic, handle incoming client requests, and synchronize the game state between multiple clients.
+Single-Threaded Server-Client Implementation:
+
+Implement a single-threaded server and client architecture.
+The server will handle one client at a time, processing incoming requests sequentially.
+Clients will communicate with the server in a linear fashion, sending actions and receiving updates in a sequential manner.
+Multi-Threaded Server-Client Implementation:
+
+Extend the server and client architecture to support multi-threading.
+Implement a multi-threaded server capable of handling multiple client connections concurrently.
+Clients will communicate with the server independently, allowing for simultaneous actions and updates across multiple clients.
+Gameplay Integration:
+
+Ensure seamless integration of the memory game functionality into the client-server architecture.
+Implement communication protocols between the client and server to exchange game state information, user actions, and updates.
+Maintain synchronization between clients to ensure consistent gameplay experience across all connected players.
+Testing and Evaluation:
+
+Conduct thorough Unit testing of the single-threaded and multi-threaded server-client implementations.
+Evaluate the performance, scalability, and robustness of each architecture under various load conditions.
+Compare and analyze the advantages and limitations of single-threaded and multi-threaded approaches in the context of the memory game application.
+Including a video recording of the server and client interactions, along with the gameplay from end to end, provides comprehensive documentation and demonstration of the implemented solution. Here's how you can achieve this:
+
+Screen Recording Setup:
+
+You can use Loom or another option or take a video on your phone of the screen and comment on the code.
+Server and Client Execution:
+
+Start the screen recording and execute the server application. Record the terminal or console window displaying the server's output, including log messages, player moves, and game state updates.
+Next, execute the client application(s) on separate windows or devices. Capture the client's interaction with the game interface, including flipping cards, sending requests to the server, and receiving game state updates.
+Multi-Threaded Client Execution (if applicable):
+
+If demonstrating multi-threaded client functionality, execute multiple instances of the client application or simulate concurrent connections using separate windows or devices.
+Record each client's interactions independently to showcase the concurrent gameplay experience.
+Gameplay Demonstration:
+
+Play the memory game from start to finish while recording the screen. Interact with the game interface on the client side, including flipping cards, making moves, and observing game state updates.
+Ensure to cover various scenarios, such as matching pairs, incorrect matches, game victories, and defeats, to provide a comprehensive demonstration of the gameplay experience.
+Output Display:
+
+During gameplay, emphasize displaying both the server-side and client-side outputs simultaneously. This includes showcasing the server's response to player moves, updating the game state, and transmitting data to the clients.
+Capture the client-side display of received game state updates, ensuring that the player's actions reflect the changes made on the server.
+Documentation and Submission:
+
+Provide comprehensive documentation detailing the design (diagram), implementation, and testing of the client-server architecture and screeshots and the explanation of the screenshots.
+Include clear instructions for building, deploying, and running the client and server components.
+Submit the completed assignment, along with the documentation, codebase (I should be able to run it, just zip the entire Eclipse project), and any necessary resources.
+Provide the compiled video recording as part of the assignment documentation.
+This assignment will challenge you to apply concepts of networking, concurrency, and distributed systems to transform a standalone application into a networked multiplayer game. By implementing both single-threaded and multi-threaded server-client architectures, you will gain valuable insights into the design considerations and trade-offs involved in building distributed applications.
+
